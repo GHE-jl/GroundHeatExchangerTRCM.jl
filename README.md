@@ -1,4 +1,4 @@
-# ThermalResistanceCapacitanceModel.jl
+# GroundHeatExchangerTRCM.jl
 
 [![CI](https://github.com/GHE-jl/ThermalResistanceCapacitanceModel.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GHE-jl/ThermalResistanceCapacitanceModel.jl/actions/workflows/CI.yml)
 [![Docs: dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://GHE-jl.github.io/ThermalResistanceCapacitanceModel.jl/dev)
