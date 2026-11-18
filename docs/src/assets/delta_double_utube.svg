@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="920" height="540" viewBox="0 0 920 540"
+     font-family="Helvetica, Arial, sans-serif" font-size="15">
+  <title>Double U-tube: cross-section, Δ-circuit and flow configurations</title>
+  <defs>
+    <path id="res" d="M-18,0 H-12 L-10,-5 L-6,5 L-2,-5 L2,5 L6,-5 L10,5 L12,0 H18"
+          fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+    <circle id="node" r="4" fill="#000"/>
+    <circle id="fnode" r="5" fill="#1f77b4" stroke="#000" stroke-width="1"/>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000"/>
+    </marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4"
+            orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d62728"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4"
+            orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f77b4"/></marker>
+  </defs>
+
+  <rect id="background" x="0" y="0" width="920" height="540" fill="#fff"/>
+
+  <g id="cross-section" inkscape:groupmode="layer" inkscape:label="Cross-section">
+    <text x="150" y="32" text-anchor="middle" font-weight="bold">Cross-section</text>
+    <rect x="20" y="60" width="260" height="310" rx="6" fill="#f3e9dc" stroke="#8c564b"
+          stroke-width="1"/>
+    <text x="30" y="80" fill="#8c564b">ground</text>
+    <circle cx="150" cy="215" r="115" fill="#e5e5e5" stroke="#000" stroke-width="2"/>
+    <text x="92" y="152" text-anchor="middle" fill="#444">grout</text>
+    <g id="pipes">
+      <circle cx="212" cy="215" r="21" fill="#cfe3f5" stroke="#555" stroke-width="5"/>
+      <circle cx="150" cy="153" r="21" fill="#cfe3f5" stroke="#555" stroke-width="5"/>
+      <circle cx="88" cy="215" r="21" fill="#cfe3f5" stroke="#555" stroke-width="5"/>
+      <circle cx="150" cy="277" r="21" fill="#cfe3f5" stroke="#555" stroke-width="5"/>
+      <g font-weight="bold" fill="#1f77b4" text-anchor="middle">
+        <text x="212" y="220">1</text>
+        <text x="150" y="158">2</text>
+        <text x="88" y="220">3</text>
+        <text x="150" y="282">4</text>
+      </g>
+    </g>
+    <g id="dimensions" stroke="#000" stroke-width="1">
+      <line x1="88" y1="238" x2="88" y2="322" stroke-dasharray="3,2"/>
+      <line x1="212" y1="238" x2="212" y2="322" stroke-dasharray="3,2"/>
+      <line x1="90" y1="316" x2="210" y2="316" marker-start="url(#arr)" marker-end="url(#arr)"/>
+      <line x1="231" y1="134" x2="246" y2="119"/>
+    </g>
+    <text x="190" y="311">s</text>
+    <text x="249" y="117">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <text x="150" y="392" text-anchor="middle" font-size="13" fill="#444">pipes 1 to 4 at 0°, 90°, 180°, 270°</text>
+  </g>
+
+  <g id="delta-circuit" inkscape:groupmode="layer" inkscape:label="Delta circuit">
+    <text x="470" y="32" text-anchor="middle" font-weight="bold">Δ-circuit (steady state)</text>
+    <!-- Borehole wall: a single node Tb, drawn as a ring -->
+    <circle id="Tb-ring" cx="470" cy="215" r="165" fill="none" stroke="#000" stroke-width="3"/>
+    <g id="wires" fill="none" stroke="#000" stroke-width="1.6">
+      <!-- R1b: pipe to wall -->
+      <line x1="570" y1="215" x2="584.5" y2="215"/>
+      <line x1="620.5" y1="215" x2="635" y2="215"/>
+      <line x1="470" y1="115" x2="470" y2="100.5"/>
+      <line x1="470" y1="64.5" x2="470" y2="50"/>
+      <line x1="370" y1="215" x2="355.5" y2="215"/>
+      <line x1="319.5" y1="215" x2="305" y2="215"/>
+      <line x1="470" y1="315" x2="470" y2="329.5"/>
+      <line x1="470" y1="365.5" x2="470" y2="380"/>
+      <!-- R12: adjacent pipes -->
+      <line x1="570" y1="215" x2="532.73" y2="177.73"/>
+      <line x1="507.27" y1="152.27" x2="470" y2="115"/>
+      <line x1="470" y1="115" x2="432.73" y2="152.27"/>
+      <line x1="407.27" y1="177.73" x2="370" y2="215"/>
+      <line x1="370" y1="215" x2="407.27" y2="252.27"/>
+      <line x1="432.73" y1="277.73" x2="470" y2="315"/>
+      <line x1="470" y1="315" x2="507.27" y2="277.73"/>
+      <line x1="532.73" y1="252.27" x2="570" y2="215"/>
+      <!-- R13: opposite pipes (the horizontal wire hops over the vertical one) -->
+      <line x1="370" y1="215" x2="402" y2="215"/>
+      <path d="M438,215 H464 A6,6 0 0 1 476,215 H570"/>
+      <line x1="470" y1="115" x2="470" y2="147"/>
+      <line x1="470" y1="183" x2="470" y2="315"/>
+    </g>
+    <g id="resistors">
+      <use xlink:href="#res" transform="translate(602.5,215)"/>
+      <use xlink:href="#res" transform="translate(470,82.5) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(337.5,215)"/>
+      <use xlink:href="#res" transform="translate(470,347.5) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(520,165) rotate(45)"/>
+      <use xlink:href="#res" transform="translate(420,165) rotate(-45)"/>
+      <use xlink:href="#res" transform="translate(420,265) rotate(45)"/>
+      <use xlink:href="#res" transform="translate(520,265) rotate(-45)"/>
+      <use xlink:href="#res" transform="translate(420,215)"/>
+      <use xlink:href="#res" transform="translate(470,165) rotate(90)"/>
+    </g>
+    <g id="nodes">
+      <use xlink:href="#fnode" x="570" y="215"/>
+      <use xlink:href="#fnode" x="470" y="115"/>
+      <use xlink:href="#fnode" x="370" y="215"/>
+      <use xlink:href="#fnode" x="470" y="315"/>
+      <use xlink:href="#node" x="635" y="215"/>
+      <use xlink:href="#node" x="470" y="50"/>
+      <use xlink:href="#node" x="305" y="215"/>
+      <use xlink:href="#node" x="470" y="380"/>
+    </g>
+    <g id="labels" font-size="14">
+      <text x="602.5" y="202" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">1b</tspan></text>
+      <text x="480" y="87">R<tspan baseline-shift="sub" font-size="70%">1b</tspan></text>
+      <text x="337.5" y="202" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">1b</tspan></text>
+      <text x="480" y="352">R<tspan baseline-shift="sub" font-size="70%">1b</tspan></text>
+      <text x="538" y="152">R<tspan baseline-shift="sub" font-size="70%">12</tspan></text>
+      <text x="402" y="152" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">12</tspan></text>
+      <text x="402" y="290" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">12</tspan></text>
+      <text x="538" y="290">R<tspan baseline-shift="sub" font-size="70%">12</tspan></text>
+      <text x="420" y="236" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">13</tspan></text>
+      <text x="479" y="170">R<tspan baseline-shift="sub" font-size="70%">13</tspan></text>
+      <g font-size="15" fill="#1f77b4">
+        <text x="576" y="238">T<tspan baseline-shift="sub" font-size="70%">1</tspan></text>
+        <text x="458" y="108" text-anchor="end">T<tspan baseline-shift="sub" font-size="70%">2</tspan></text>
+        <text x="364" y="238" text-anchor="end">T<tspan baseline-shift="sub" font-size="70%">3</tspan></text>
+        <text x="458" y="333" text-anchor="end">T<tspan baseline-shift="sub" font-size="70%">4</tspan></text>
+      </g>
+      <text x="598" y="92" font-size="15">T<tspan baseline-shift="sub" font-size="70%">b</tspan> (wall)</text>
+    </g>
+  </g>
+
+  <g id="flow-configurations" inkscape:groupmode="layer" inkscape:label="Flow configurations">
+    <!-- network = :diagonal (pipes 1 and 3 down) -->
+    <g id="diagonal">
+      <rect x="670" y="50" width="240" height="200" rx="6" fill="none" stroke="#999"/>
+      <text x="790" y="72" text-anchor="middle" font-weight="bold" font-size="14">network = :diagonal</text>
+      <circle cx="790" cy="150" r="44" fill="#e5e5e5" stroke="#000" stroke-width="1.5"/>
+      <g fill="#cfe3f5" stroke="#555" stroke-width="3">
+        <circle cx="815" cy="150" r="10"/>
+        <circle cx="790" cy="125" r="10"/>
+        <circle cx="765" cy="150" r="10"/>
+        <circle cx="790" cy="175" r="10"/>
+      </g>
+      <g font-size="11" font-weight="bold" fill="#1f77b4" text-anchor="middle">
+        <text x="815" y="154">1</text>
+        <text x="790" y="129">2</text>
+        <text x="765" y="154">3</text>
+        <text x="790" y="179">4</text>
+      </g>
+      <g id="flow-marks-diagonal">
+        <line x1="850" y1="141" x2="850" y2="159" stroke="#d62728" stroke-width="2.5" marker-end="url(#arrR)"/>
+        <line x1="790" y1="104" x2="790" y2="86" stroke="#1f77b4" stroke-width="2.5" marker-end="url(#arrB)"/>
+        <line x1="730" y1="141" x2="730" y2="159" stroke="#d62728" stroke-width="2.5" marker-end="url(#arrR)"/>
+        <line x1="790" y1="214" x2="790" y2="196" stroke="#1f77b4" stroke-width="2.5" marker-end="url(#arrB)"/>
+      </g>
+      <text x="790" y="238" text-anchor="middle" font-size="13">U-tubes 1→2 and 3→4</text>
+    </g>
+    <!-- network = :adjacent (pipes 1 and 2 down) -->
+    <g id="adjacent">
+      <rect x="670" y="262" width="240" height="200" rx="6" fill="none" stroke="#999"/>
+      <text x="790" y="284" text-anchor="middle" font-weight="bold" font-size="14">network = :adjacent</text>
+      <circle cx="790" cy="362" r="44" fill="#e5e5e5" stroke="#000" stroke-width="1.5"/>
+      <g fill="#cfe3f5" stroke="#555" stroke-width="3">
+        <circle cx="815" cy="362" r="10"/>
+        <circle cx="790" cy="337" r="10"/>
+        <circle cx="765" cy="362" r="10"/>
+        <circle cx="790" cy="387" r="10"/>
+      </g>
+      <g font-size="11" font-weight="bold" fill="#1f77b4" text-anchor="middle">
+        <text x="815" y="366">1</text>
+        <text x="790" y="341">2</text>
+        <text x="765" y="366">3</text>
+        <text x="790" y="391">4</text>
+      </g>
+      <g id="flow-marks-adjacent">
+        <line x1="850" y1="353" x2="850" y2="371" stroke="#d62728" stroke-width="2.5" marker-end="url(#arrR)"/>
+        <line x1="790" y1="298" x2="790" y2="316" stroke="#d62728" stroke-width="2.5" marker-end="url(#arrR)"/>
+        <line x1="730" y1="371" x2="730" y2="353" stroke="#1f77b4" stroke-width="2.5" marker-end="url(#arrB)"/>
+        <line x1="790" y1="426" x2="790" y2="408" stroke="#1f77b4" stroke-width="2.5" marker-end="url(#arrB)"/>
+      </g>
+      <text x="790" y="450" text-anchor="middle" font-size="13">U-tubes 1→4 and 2→3</text>
+    </g>
+    <g id="legend">
+      <line x1="700" y1="471" x2="700" y2="487" stroke="#d62728" stroke-width="2.5" marker-end="url(#arrR)"/>
+      <text x="710" y="484" font-size="13">down (inlet)</text>
+      <line x1="805" y1="487" x2="805" y2="471" stroke="#1f77b4" stroke-width="2.5" marker-end="url(#arrB)"/>
+      <text x="815" y="484" font-size="13">up (outlet)</text>
+    </g>
+  </g>
+
+  <g id="definitions" inkscape:groupmode="layer" inkscape:label="Definitions">
+    <text x="30" y="430">R<tspan baseline-shift="sub" font-size="70%">1b</tspan> = 4R<tspan baseline-shift="sub" font-size="70%">b</tspan><tspan dx="10">(each pipe to the wall: film, pipe, grout)</tspan></text>
+    <text x="30" y="456">1/R<tspan baseline-shift="sub" font-size="70%">12</tspan> = 1/(2R<tspan baseline-shift="super" font-size="70%">d</tspan><tspan dx="-6" baseline-shift="sub" font-size="70%">a</tspan>) − 1/(16R<tspan baseline-shift="sub" font-size="70%">b</tspan>)<tspan dx="10">(adjacent pipes)</tspan></text>
+    <text x="30" y="482">1/R<tspan baseline-shift="sub" font-size="70%">13</tspan> = 1/R<tspan baseline-shift="super" font-size="70%">a</tspan><tspan dx="-6" baseline-shift="sub" font-size="70%">a</tspan> − 1/(2R<tspan baseline-shift="super" font-size="70%">d</tspan><tspan dx="-6" baseline-shift="sub" font-size="70%">a</tspan>) − 1/(16R<tspan baseline-shift="sub" font-size="70%">b</tspan>)<tspan dx="10">(opposite pipes, can be negative)</tspan></text>
+    <text x="30" y="510" font-size="13" fill="#444">Claesson &amp; Javed (2019, Eq. 26): one Δ-circuit for both flow configurations (R<tspan baseline-shift="super" font-size="70%">d</tspan><tspan dx="-5" baseline-shift="sub" font-size="70%">a</tspan>: diagonal, R<tspan baseline-shift="super" font-size="70%">a</tspan><tspan dx="-5" baseline-shift="sub" font-size="70%">a</tspan>: adjacent inlets)</text>
+  </g>
+</svg>

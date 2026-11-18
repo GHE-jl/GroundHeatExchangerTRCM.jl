@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="900" height="830" viewBox="0 0 900 830"
+     font-family="Helvetica, Arial, sans-serif" font-size="15">
+<title>Pair model of trcm_pairs: emitter and receiver columns</title>
+<defs>
+  <path id="res" d="M-18,0 H-12 L-10,-5 L-6,5 L-2,-5 L2,5 L6,-5 L10,5 L12,0 H18"
+        fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+  <circle id="node" r="4" fill="#000"/>
+  <circle id="fnode" r="5" fill="#1f77b4" stroke="#000" stroke-width="1"/>
+  <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse"
+           patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#fff"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#8c564b" stroke-width="2"/>
+  </pattern>
+  <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5"
+          orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f77b4"/></marker>
+  <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5"
+          orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d62728"/></marker>
+</defs>
+<rect id="background" x="0" y="0" width="900" height="830" fill="#fff"/>
+<g id="regions" inkscape:groupmode="layer" inkscape:label="Regions">
+  <rect x="90" y="100" width="340" height="560" fill="#f3e9dc"/>
+  <rect x="500" y="100" width="340" height="560" fill="#f3e9dc"/>
+  <g stroke="#999" stroke-width="1" stroke-dasharray="5,4">
+    <line x1="90" y1="180" x2="430" y2="180"/>
+    <line x1="500" y1="180" x2="840" y2="180"/>
+    <line x1="90" y1="260" x2="430" y2="260"/>
+    <line x1="500" y1="260" x2="840" y2="260"/>
+    <line x1="90" y1="340" x2="430" y2="340"/>
+    <line x1="500" y1="340" x2="840" y2="340"/>
+    <line x1="90" y1="420" x2="430" y2="420"/>
+    <line x1="500" y1="420" x2="840" y2="420"/>
+    <line x1="90" y1="520" x2="430" y2="520"/>
+    <line x1="500" y1="520" x2="840" y2="520"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="1">
+    <path d="M58,103 H52 V177 H58"/>
+    <path d="M58,183 H52 V417 H58"/>
+    <path d="M58,423 H52 V657 H58"/>
+  </g>
+  <g font-size="13" text-anchor="middle">
+    <text transform="translate(42,140) rotate(-90)">depth D</text>
+    <text transform="translate(42,300) rotate(-90)">n<tspan baseline-shift="sub" font-size="70%">z</tspan> borehole layers</text>
+    <text transform="translate(42,540) rotate(-90)">n<tspan baseline-shift="sub" font-size="70%">below</tspan> layers, thicker</text>
+  </g>
+</g>
+<g id="emitter" inkscape:groupmode="layer" inkscape:label="Emitter">
+  <g id="emitter-boundaries">
+    <rect x="90" y="91" width="349" height="9" fill="url(#hatch)" stroke="#8c564b" stroke-width="1.2"/>
+    <rect x="90" y="660" width="349" height="9" fill="url(#hatch)" stroke="#8c564b" stroke-width="1.2"/>
+    <rect x="430" y="100" width="9" height="560" fill="url(#hatch)" stroke="#8c564b" stroke-width="1.2"/>
+    <line x1="82" y1="100" x2="82" y2="660" stroke="#666" stroke-width="1" stroke-dasharray="10,3,2,3"/>
+    <text x="434.5" y="688" text-anchor="middle" font-size="12" fill="#8c564b">r = r<tspan baseline-shift="sub" font-size="70%">s</tspan></text>
+    <text x="82" y="688" text-anchor="middle" font-size="12" fill="#666">r = 0</text>
+  </g>
+  <g id="emitter-interior">
+    <rect x="92" y="195" width="96" height="50" rx="5" fill="#e9e9e9" stroke="#555" stroke-width="1.2"/>
+    <rect x="92" y="275" width="96" height="50" rx="5" fill="#e9e9e9" stroke="#555" stroke-width="1.2"/>
+    <rect x="92" y="355" width="96" height="50" rx="5" fill="#e9e9e9" stroke="#555" stroke-width="1.2"/>
+  </g>
+  <g id="emitter-wires" fill="none" stroke="#000" stroke-width="1.6">
+    <polyline points="230,145 247,145"/>
+    <polyline points="283,145 300,145"/>
+    <polyline points="300,145 317,145"/>
+    <polyline points="353,145 370,145"/>
+    <polyline points="370,145 382,145"/>
+    <polyline points="418,145 430,145"/>
+    <polyline points="230,220 247,220"/>
+    <polyline points="283,220 300,220"/>
+    <polyline points="300,220 317,220"/>
+    <polyline points="353,220 370,220"/>
+    <polyline points="370,220 382,220"/>
+    <polyline points="418,220 430,220"/>
+    <polyline points="230,300 247,300"/>
+    <polyline points="283,300 300,300"/>
+    <polyline points="300,300 317,300"/>
+    <polyline points="353,300 370,300"/>
+    <polyline points="370,300 382,300"/>
+    <polyline points="418,300 430,300"/>
+    <polyline points="230,380 247,380"/>
+    <polyline points="283,380 300,380"/>
+    <polyline points="300,380 317,380"/>
+    <polyline points="353,380 370,380"/>
+    <polyline points="370,380 382,380"/>
+    <polyline points="418,380 430,380"/>
+    <polyline points="230,470 247,470"/>
+    <polyline points="283,470 300,470"/>
+    <polyline points="300,470 317,470"/>
+    <polyline points="353,470 370,470"/>
+    <polyline points="370,470 382,470"/>
+    <polyline points="418,470 430,470"/>
+    <polyline points="230,590 247,590"/>
+    <polyline points="283,590 300,590"/>
+    <polyline points="300,590 317,590"/>
+    <polyline points="353,590 370,590"/>
+    <polyline points="370,590 382,590"/>
+    <polyline points="418,590 430,590"/>
+    <polyline points="230,100 230,104.5"/>
+    <polyline points="230,140.5 230,145"/>
+    <polyline points="230,145 230,164.5"/>
+    <polyline points="230,200.5 230,220"/>
+    <polyline points="230,220 230,242"/>
+    <polyline points="230,278 230,300"/>
+    <polyline points="230,300 230,322"/>
+    <polyline points="230,358 230,380"/>
+    <polyline points="230,380 230,407"/>
+    <polyline points="230,443 230,470"/>
+    <polyline points="230,470 230,512"/>
+    <polyline points="230,548 230,590"/>
+    <polyline points="230,590 230,607"/>
+    <polyline points="230,643 230,660"/>
+    <polyline points="300,100 300,104.5"/>
+    <polyline points="300,140.5 300,145"/>
+    <polyline points="300,145 300,164.5"/>
+    <polyline points="300,200.5 300,220"/>
+    <polyline points="300,220 300,242"/>
+    <polyline points="300,278 300,300"/>
+    <polyline points="300,300 300,322"/>
+    <polyline points="300,358 300,380"/>
+    <polyline points="300,380 300,407"/>
+    <polyline points="300,443 300,470"/>
+    <polyline points="300,470 300,512"/>
+    <polyline points="300,548 300,590"/>
+    <polyline points="300,590 300,607"/>
+    <polyline points="300,643 300,660"/>
+    <polyline points="370,100 370,104.5"/>
+    <polyline points="370,140.5 370,145"/>
+    <polyline points="370,145 370,164.5"/>
+    <polyline points="370,200.5 370,220"/>
+    <polyline points="370,220 370,242"/>
+    <polyline points="370,278 370,300"/>
+    <polyline points="370,300 370,322"/>
+    <polyline points="370,358 370,380"/>
+    <polyline points="370,380 370,407"/>
+    <polyline points="370,443 370,470"/>
+    <polyline points="370,470 370,512"/>
+    <polyline points="370,548 370,590"/>
+    <polyline points="370,590 370,607"/>
+    <polyline points="370,643 370,660"/>
+    <polyline points="188,220 230,220"/>
+    <polyline points="188,300 230,300"/>
+    <polyline points="188,380 230,380"/>
+  </g>
+  <g id="emitter-resistors">
+    <use xlink:href="#res" x="265" y="145"/>
+    <use xlink:href="#res" x="335" y="145"/>
+    <use xlink:href="#res" x="400" y="145"/>
+    <use xlink:href="#res" x="265" y="220"/>
+    <use xlink:href="#res" x="335" y="220"/>
+    <use xlink:href="#res" x="400" y="220"/>
+    <use xlink:href="#res" x="265" y="300"/>
+    <use xlink:href="#res" x="335" y="300"/>
+    <use xlink:href="#res" x="400" y="300"/>
+    <use xlink:href="#res" x="265" y="380"/>
+    <use xlink:href="#res" x="335" y="380"/>
+    <use xlink:href="#res" x="400" y="380"/>
+    <use xlink:href="#res" x="265" y="470"/>
+    <use xlink:href="#res" x="335" y="470"/>
+    <use xlink:href="#res" x="400" y="470"/>
+    <use xlink:href="#res" x="265" y="590"/>
+    <use xlink:href="#res" x="335" y="590"/>
+    <use xlink:href="#res" x="400" y="590"/>
+    <use xlink:href="#res" transform="translate(230,122.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(230,182.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(230,260) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(230,340) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(230,425) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(230,530) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(230,625) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(300,122.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(300,182.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(300,260) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(300,340) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(300,425) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(300,530) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(300,625) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(370,122.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(370,182.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(370,260) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(370,340) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(370,425) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(370,530) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(370,625) rotate(90)"/>
+  </g>
+  <g id="emitter-advection" fill="none" stroke-width="2.2">
+    <line x1="115" y1="220" x2="115" y2="287" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <line x1="165" y1="288" x2="165" y2="221" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <line x1="115" y1="300" x2="115" y2="367" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <line x1="165" y1="368" x2="165" y2="301" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <path d="M115,380 C115,402 165,402 165,388" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <polyline points="165,208 165,66 153,66" stroke="#1f77b4"/>
+    <polyline points="127,66 115,66 115,207" stroke="#d62728" marker-end="url(#arrR)"/>
+    <rect x="127" y="55" width="26" height="22" rx="3" fill="#fff" stroke="#d62728" stroke-width="1.6"/>
+  </g>
+  <g id="emitter-nodes">
+    <use xlink:href="#node" x="230" y="145"/>
+    <use xlink:href="#node" x="300" y="145"/>
+    <use xlink:href="#node" x="370" y="145"/>
+    <use xlink:href="#node" x="230" y="220"/>
+    <use xlink:href="#node" x="300" y="220"/>
+    <use xlink:href="#node" x="370" y="220"/>
+    <use xlink:href="#node" x="230" y="300"/>
+    <use xlink:href="#node" x="300" y="300"/>
+    <use xlink:href="#node" x="370" y="300"/>
+    <use xlink:href="#node" x="230" y="380"/>
+    <use xlink:href="#node" x="300" y="380"/>
+    <use xlink:href="#node" x="370" y="380"/>
+    <use xlink:href="#node" x="230" y="470"/>
+    <use xlink:href="#node" x="300" y="470"/>
+    <use xlink:href="#node" x="370" y="470"/>
+    <use xlink:href="#node" x="230" y="590"/>
+    <use xlink:href="#node" x="300" y="590"/>
+    <use xlink:href="#node" x="370" y="590"/>
+    <use xlink:href="#fnode" x="115" y="214"/>
+    <use xlink:href="#fnode" x="165" y="214"/>
+    <use xlink:href="#fnode" x="115" y="294"/>
+    <use xlink:href="#fnode" x="165" y="294"/>
+    <use xlink:href="#fnode" x="115" y="374"/>
+    <use xlink:href="#fnode" x="165" y="374"/>
+  </g>
+  <g id="emitter-labels">
+    <text x="237" y="136" font-size="12">core</text>
+    <text x="237" y="211" font-size="12">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <text x="237" y="291" font-size="12">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <text x="237" y="371" font-size="12">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <text x="237" y="461" font-size="12">core</text>
+    <text x="237" y="581" font-size="12">core</text>
+    <text x="140" y="71" text-anchor="middle" font-size="14" font-weight="bold" fill="#d62728">+1</text>
+    <text x="107" y="62" text-anchor="end" font-size="14" fill="#d62728">T<tspan baseline-shift="sub" font-size="70%">in</tspan> = T<tspan baseline-shift="sub" font-size="70%">out</tspan> + 1</text>
+    <text x="173" y="62" font-size="14" fill="#1f77b4">T<tspan baseline-shift="sub" font-size="70%">out</tspan></text>
+  </g>
+</g>
+<g id="receiver" inkscape:groupmode="layer" inkscape:label="Receiver">
+  <g id="receiver-boundaries">
+    <rect x="500" y="91" width="349" height="9" fill="url(#hatch)" stroke="#8c564b" stroke-width="1.2"/>
+    <rect x="500" y="660" width="349" height="9" fill="url(#hatch)" stroke="#8c564b" stroke-width="1.2"/>
+    <rect x="840" y="100" width="9" height="560" fill="url(#hatch)" stroke="#8c564b" stroke-width="1.2"/>
+    <line x1="492" y1="100" x2="492" y2="660" stroke="#666" stroke-width="1" stroke-dasharray="10,3,2,3"/>
+    <text x="844.5" y="688" text-anchor="middle" font-size="12" fill="#8c564b">r = r<tspan baseline-shift="sub" font-size="70%">s</tspan></text>
+    <text x="492" y="688" text-anchor="middle" font-size="12" fill="#666">r = 0</text>
+  </g>
+  <g id="receiver-interior">
+    <rect x="502" y="195" width="96" height="50" rx="5" fill="#e9e9e9" stroke="#555" stroke-width="1.2"/>
+    <rect x="502" y="275" width="96" height="50" rx="5" fill="#e9e9e9" stroke="#555" stroke-width="1.2"/>
+    <rect x="502" y="355" width="96" height="50" rx="5" fill="#e9e9e9" stroke="#555" stroke-width="1.2"/>
+  </g>
+  <g id="receiver-wires" fill="none" stroke="#000" stroke-width="1.6">
+    <polyline points="640,145 657,145"/>
+    <polyline points="693,145 710,145"/>
+    <polyline points="710,145 727,145"/>
+    <polyline points="763,145 780,145"/>
+    <polyline points="780,145 792,145"/>
+    <polyline points="828,145 840,145"/>
+    <polyline points="640,220 657,220"/>
+    <polyline points="693,220 710,220"/>
+    <polyline points="710,220 727,220"/>
+    <polyline points="763,220 780,220"/>
+    <polyline points="780,220 792,220"/>
+    <polyline points="828,220 840,220"/>
+    <polyline points="640,300 657,300"/>
+    <polyline points="693,300 710,300"/>
+    <polyline points="710,300 727,300"/>
+    <polyline points="763,300 780,300"/>
+    <polyline points="780,300 792,300"/>
+    <polyline points="828,300 840,300"/>
+    <polyline points="640,380 657,380"/>
+    <polyline points="693,380 710,380"/>
+    <polyline points="710,380 727,380"/>
+    <polyline points="763,380 780,380"/>
+    <polyline points="780,380 792,380"/>
+    <polyline points="828,380 840,380"/>
+    <polyline points="640,470 657,470"/>
+    <polyline points="693,470 710,470"/>
+    <polyline points="710,470 727,470"/>
+    <polyline points="763,470 780,470"/>
+    <polyline points="780,470 792,470"/>
+    <polyline points="828,470 840,470"/>
+    <polyline points="640,590 657,590"/>
+    <polyline points="693,590 710,590"/>
+    <polyline points="710,590 727,590"/>
+    <polyline points="763,590 780,590"/>
+    <polyline points="780,590 792,590"/>
+    <polyline points="828,590 840,590"/>
+    <polyline points="640,100 640,104.5"/>
+    <polyline points="640,140.5 640,145"/>
+    <polyline points="640,145 640,164.5"/>
+    <polyline points="640,200.5 640,220"/>
+    <polyline points="640,220 640,242"/>
+    <polyline points="640,278 640,300"/>
+    <polyline points="640,300 640,322"/>
+    <polyline points="640,358 640,380"/>
+    <polyline points="640,380 640,407"/>
+    <polyline points="640,443 640,470"/>
+    <polyline points="640,470 640,512"/>
+    <polyline points="640,548 640,590"/>
+    <polyline points="640,590 640,607"/>
+    <polyline points="640,643 640,660"/>
+    <polyline points="710,100 710,104.5"/>
+    <polyline points="710,140.5 710,145"/>
+    <polyline points="710,145 710,164.5"/>
+    <polyline points="710,200.5 710,220"/>
+    <polyline points="710,220 710,242"/>
+    <polyline points="710,278 710,300"/>
+    <polyline points="710,300 710,322"/>
+    <polyline points="710,358 710,380"/>
+    <polyline points="710,380 710,407"/>
+    <polyline points="710,443 710,470"/>
+    <polyline points="710,470 710,512"/>
+    <polyline points="710,548 710,590"/>
+    <polyline points="710,590 710,607"/>
+    <polyline points="710,643 710,660"/>
+    <polyline points="780,100 780,104.5"/>
+    <polyline points="780,140.5 780,145"/>
+    <polyline points="780,145 780,164.5"/>
+    <polyline points="780,200.5 780,220"/>
+    <polyline points="780,220 780,242"/>
+    <polyline points="780,278 780,300"/>
+    <polyline points="780,300 780,322"/>
+    <polyline points="780,358 780,380"/>
+    <polyline points="780,380 780,407"/>
+    <polyline points="780,443 780,470"/>
+    <polyline points="780,470 780,512"/>
+    <polyline points="780,548 780,590"/>
+    <polyline points="780,590 780,607"/>
+    <polyline points="780,643 780,660"/>
+    <polyline points="598,220 640,220"/>
+    <polyline points="598,300 640,300"/>
+    <polyline points="598,380 640,380"/>
+  </g>
+  <g id="receiver-resistors">
+    <use xlink:href="#res" x="675" y="145"/>
+    <use xlink:href="#res" x="745" y="145"/>
+    <use xlink:href="#res" x="810" y="145"/>
+    <use xlink:href="#res" x="675" y="220"/>
+    <use xlink:href="#res" x="745" y="220"/>
+    <use xlink:href="#res" x="810" y="220"/>
+    <use xlink:href="#res" x="675" y="300"/>
+    <use xlink:href="#res" x="745" y="300"/>
+    <use xlink:href="#res" x="810" y="300"/>
+    <use xlink:href="#res" x="675" y="380"/>
+    <use xlink:href="#res" x="745" y="380"/>
+    <use xlink:href="#res" x="810" y="380"/>
+    <use xlink:href="#res" x="675" y="470"/>
+    <use xlink:href="#res" x="745" y="470"/>
+    <use xlink:href="#res" x="810" y="470"/>
+    <use xlink:href="#res" x="675" y="590"/>
+    <use xlink:href="#res" x="745" y="590"/>
+    <use xlink:href="#res" x="810" y="590"/>
+    <use xlink:href="#res" transform="translate(640,122.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(640,182.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(640,260) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(640,340) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(640,425) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(640,530) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(640,625) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(710,122.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(710,182.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(710,260) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(710,340) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(710,425) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(710,530) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(710,625) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(780,122.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(780,182.5) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(780,260) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(780,340) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(780,425) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(780,530) rotate(90)"/>
+    <use xlink:href="#res" transform="translate(780,625) rotate(90)"/>
+  </g>
+  <g id="receiver-advection" fill="none" stroke-width="2.2">
+    <line x1="525" y1="220" x2="525" y2="287" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <line x1="575" y1="288" x2="575" y2="221" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <line x1="525" y1="300" x2="525" y2="367" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <line x1="575" y1="368" x2="575" y2="301" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <path d="M525,380 C525,402 575,402 575,388" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <polyline points="575,208 575,66 525,66 525,207" stroke="#1f77b4" marker-end="url(#arrB)"/>
+  </g>
+  <g id="receiver-nodes">
+    <use xlink:href="#node" x="640" y="145"/>
+    <use xlink:href="#node" x="710" y="145"/>
+    <use xlink:href="#node" x="780" y="145"/>
+    <use xlink:href="#node" x="640" y="220"/>
+    <use xlink:href="#node" x="710" y="220"/>
+    <use xlink:href="#node" x="780" y="220"/>
+    <use xlink:href="#node" x="640" y="300"/>
+    <use xlink:href="#node" x="710" y="300"/>
+    <use xlink:href="#node" x="780" y="300"/>
+    <use xlink:href="#node" x="640" y="380"/>
+    <use xlink:href="#node" x="710" y="380"/>
+    <use xlink:href="#node" x="780" y="380"/>
+    <use xlink:href="#node" x="640" y="470"/>
+    <use xlink:href="#node" x="710" y="470"/>
+    <use xlink:href="#node" x="780" y="470"/>
+    <use xlink:href="#node" x="640" y="590"/>
+    <use xlink:href="#node" x="710" y="590"/>
+    <use xlink:href="#node" x="780" y="590"/>
+    <use xlink:href="#fnode" x="525" y="214"/>
+    <use xlink:href="#fnode" x="575" y="214"/>
+    <use xlink:href="#fnode" x="525" y="294"/>
+    <use xlink:href="#fnode" x="575" y="294"/>
+    <use xlink:href="#fnode" x="525" y="374"/>
+    <use xlink:href="#fnode" x="575" y="374"/>
+  </g>
+  <g id="receiver-labels">
+    <text x="647" y="136" font-size="12">core</text>
+    <text x="647" y="211" font-size="12">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <text x="647" y="291" font-size="12">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <text x="647" y="371" font-size="12">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <text x="647" y="461" font-size="12">core</text>
+    <text x="647" y="581" font-size="12">core</text>
+    <text x="517" y="62" text-anchor="end" font-size="14" fill="#1f77b4">T<tspan baseline-shift="sub" font-size="70%">in</tspan> = T<tspan baseline-shift="sub" font-size="70%">out</tspan></text>
+    <text x="583" y="62" font-size="14" fill="#1f77b4">T<tspan baseline-shift="sub" font-size="70%">out</tspan></text>
+  </g>
+</g>
+<g id="coupling" inkscape:groupmode="layer" inkscape:label="Coupling">
+  <g fill="none" stroke="#d62728" stroke-width="1.4">
+    <polyline points="300,220 335,204 370,220" stroke-dasharray="3,2"/>
+    <polyline points="335,204 456,204 456,187 619,187 619,213" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arrR)"/>
+  </g>
+  <path d="M335,199 l5,5 l-5,5 l-5,-5 z" fill="#d62728"/>
+  <g fill="none" stroke="#d62728" stroke-width="1.4">
+    <polyline points="300,300 335,284 370,300" stroke-dasharray="3,2"/>
+    <polyline points="335,284 456,284 456,267 619,267 619,293" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arrR)"/>
+  </g>
+  <path d="M335,279 l5,5 l-5,5 l-5,-5 z" fill="#d62728"/>
+  <g fill="none" stroke="#d62728" stroke-width="1.4">
+    <polyline points="300,380 335,364 370,380" stroke-dasharray="3,2"/>
+    <polyline points="335,364 456,364 456,347 619,347 619,373" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arrR)"/>
+  </g>
+  <path d="M335,359 l5,5 l-5,5 l-5,-5 z" fill="#d62728"/>
+  <text x="335" y="194" text-anchor="middle" font-size="13" fill="#d62728">r = d</text>
+</g>
+<g id="titles" inkscape:groupmode="layer" inkscape:label="Titles and notes">
+  <text x="450" y="24" text-anchor="middle" font-weight="bold">trcm_pairs: emitter and receiver TRCM columns with vertical ground conduction</text>
+  <text x="280" y="48" text-anchor="middle" font-weight="bold" fill="#d62728">Emitter</text>
+  <text x="690" y="48" text-anchor="middle" font-weight="bold" fill="#1f77b4">Receiver at distance d</text>
+  <text x="320" y="87" font-size="12" fill="#8c564b">ground surface, T = 0</text>
+  <text x="730" y="87" font-size="12" fill="#8c564b">ground surface, T = 0</text>
+  <text x="300" y="688" text-anchor="middle" font-size="12" fill="#8c564b">bottom (r<tspan baseline-shift="sub" font-size="70%">s</tspan> below the toe), T = 0</text>
+  <text x="710" y="688" text-anchor="middle" font-size="12" fill="#8c564b">bottom (r<tspan baseline-shift="sub" font-size="70%">s</tspan> below the toe), T = 0</text>
+  <g font-size="13">
+    <rect x="30" y="708" width="28" height="16" rx="3" fill="#e9e9e9" stroke="#555"/>
+    <text x="68" y="721">borehole interior (fluid, pipes, grout and core, as in one layer): radial only, no vertical conduction</text>
+    <use xlink:href="#res" transform="translate(44,740) rotate(90)" />
+    <text x="68" y="745">vertical soil conduction k<tspan baseline-shift="sub" font-size="70%">s</tspan>·A/Δz between nodes of the same radius in adjacent layers (T<tspan baseline-shift="sub" font-size="70%">b</tspan> and the soil core included)</text>
+    <line x1="28" y1="768" x2="60" y2="768" stroke="#d62728" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arrR)"/>
+    <text x="68" y="773">one-way coupling: emitter ground at r = d (ln r interpolation, same layer) acts on the receiver</text>
+    <text x="68" y="790">interior through the edges reaching its wall node; the receiver soil nodes carry its own disturbance</text>
+    <text x="30" y="816" fill="#444">Surface, bottom and r = r<tspan baseline-shift="sub" font-size="70%">s</tspan> held at 0 in every column; node capacities not drawn; one receiver column per distance d.</text>
+  </g>
+</g>
+</svg>

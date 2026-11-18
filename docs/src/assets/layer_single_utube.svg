@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="850" height="700" viewBox="0 0 850 700"
+     font-family="Helvetica, Arial, sans-serif" font-size="15">
+  <title>Network of one depth layer of a single U-tube</title>
+  <defs>
+    <!-- Resistor, 36 px long, centered on (0,0), horizontal -->
+    <path id="res" d="M-18,0 H-12 L-10,-5 L-6,5 L-2,-5 L2,5 L6,-5 L10,5 L12,0 H18"
+          fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- Node capacity to the reference temperature, from the node (0,0) downward -->
+    <path id="cap" d="M0,0 V10 M-9,10 H9 M-9,15 H9 M0,15 V22 M-8,22 H8 M-5,26 H5 M-2,30 H2"
+          fill="none" stroke="#666" stroke-width="1.4"/>
+    <circle id="node" r="4" fill="#000"/>
+    <circle id="fnode" r="5.5" fill="#1f77b4" stroke="#000" stroke-width="1"/>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse"
+             patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#fff"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#8c564b" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <rect id="background" x="0" y="0" width="850" height="700" fill="#fff"/>
+
+  <text x="425" y="28" text-anchor="middle" font-weight="bold">One depth layer: SingleUTube with n<tspan baseline-shift="sub" font-size="70%">p</tspan> = 2, n<tspan baseline-shift="sub" font-size="70%">g</tspan> = 3, n<tspan baseline-shift="sub" font-size="70%">gg</tspan> = 3, n<tspan baseline-shift="sub" font-size="70%">s</tspan> = 4</text>
+
+  <g id="wires" inkscape:groupmode="layer" inkscape:label="Wires" fill="none" stroke="#000"
+     stroke-width="1.6">
+    <!-- Pipe 1 (left column): fluid, film + pipe wall, grout -->
+    <polyline points="230,90 230,112"/>
+    <polyline points="230,148 230,162"/>
+    <polyline points="230,198 230,242"/>
+    <polyline points="230,278 230,322"/>
+    <polyline points="230,358 230,402"/>
+    <polyline points="230,438 230,482"/>
+    <polyline points="230,518 230,550 380,550"/>
+    <!-- Pipe 2 (right column) -->
+    <polyline points="530,90 530,112"/>
+    <polyline points="530,148 530,162"/>
+    <polyline points="530,198 530,242"/>
+    <polyline points="530,278 530,322"/>
+    <polyline points="530,358 530,402"/>
+    <polyline points="530,438 530,482"/>
+    <polyline points="530,518 530,550 380,550"/>
+    <!-- Grout core chain between the first grout nodes -->
+    <polyline points="230,380 262,380"/>
+    <polyline points="298,380 362,380"/>
+    <polyline points="398,380 462,380"/>
+    <polyline points="498,380 530,380"/>
+    <!-- Borehole wall to the soil chain -->
+    <polyline points="380,550 380,600 412,600"/>
+    <polyline points="448,600 512,600"/>
+    <polyline points="548,600 612,600"/>
+    <polyline points="648,600 712,600"/>
+    <polyline points="748,600 780,600"/>
+  </g>
+
+  <g id="resistors" inkscape:groupmode="layer" inkscape:label="Resistors">
+    <g id="resistors-pipe1">
+      <use xlink:href="#res" transform="translate(230,130) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(230,180) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(230,260) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(230,340) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(230,420) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(230,500) rotate(90)"/>
+    </g>
+    <g id="resistors-pipe2">
+      <use xlink:href="#res" transform="translate(530,130) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(530,180) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(530,260) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(530,340) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(530,420) rotate(90)"/>
+      <use xlink:href="#res" transform="translate(530,500) rotate(90)"/>
+    </g>
+    <g id="resistors-core">
+      <use xlink:href="#res" x="280" y="380"/>
+      <use xlink:href="#res" x="380" y="380"/>
+      <use xlink:href="#res" x="480" y="380"/>
+    </g>
+    <g id="resistors-soil">
+      <use xlink:href="#res" x="430" y="600"/>
+      <use xlink:href="#res" x="530" y="600"/>
+      <use xlink:href="#res" x="630" y="600"/>
+      <use xlink:href="#res" x="730" y="600"/>
+    </g>
+  </g>
+
+  <g id="capacities" inkscape:groupmode="layer" inkscape:label="Capacities">
+    <!-- Pipe 1 nodes: capacities to the left -->
+    <use xlink:href="#cap" transform="translate(230,90) rotate(90)"/>
+    <use xlink:href="#cap" transform="translate(230,220) rotate(90)"/>
+    <use xlink:href="#cap" transform="translate(230,300) rotate(90)"/>
+    <use xlink:href="#cap" transform="translate(230,380) rotate(90)"/>
+    <use xlink:href="#cap" transform="translate(230,460) rotate(90)"/>
+    <!-- Pipe 2 nodes: capacities to the right -->
+    <use xlink:href="#cap" transform="translate(530,90) rotate(-90)"/>
+    <use xlink:href="#cap" transform="translate(530,220) rotate(-90)"/>
+    <use xlink:href="#cap" transform="translate(530,300) rotate(-90)"/>
+    <use xlink:href="#cap" transform="translate(530,380) rotate(-90)"/>
+    <use xlink:href="#cap" transform="translate(530,460) rotate(-90)"/>
+    <!-- Core, wall and soil nodes -->
+    <use xlink:href="#cap" x="330" y="380"/>
+    <use xlink:href="#cap" x="430" y="380"/>
+    <use xlink:href="#cap" x="380" y="600"/>
+    <use xlink:href="#cap" x="480" y="600"/>
+    <use xlink:href="#cap" x="580" y="600"/>
+    <use xlink:href="#cap" x="680" y="600"/>
+  </g>
+
+  <g id="nodes" inkscape:groupmode="layer" inkscape:label="Nodes">
+    <use xlink:href="#fnode" x="230" y="90"/>
+    <use xlink:href="#fnode" x="530" y="90"/>
+    <use xlink:href="#node" x="230" y="220"/>
+    <use xlink:href="#node" x="230" y="300"/>
+    <use xlink:href="#node" x="230" y="380"/>
+    <use xlink:href="#node" x="230" y="460"/>
+    <use xlink:href="#node" x="530" y="220"/>
+    <use xlink:href="#node" x="530" y="300"/>
+    <use xlink:href="#node" x="530" y="380"/>
+    <use xlink:href="#node" x="530" y="460"/>
+    <use xlink:href="#node" x="330" y="380"/>
+    <use xlink:href="#node" x="430" y="380"/>
+    <use xlink:href="#node" x="380" y="550"/>
+    <use xlink:href="#node" x="480" y="600"/>
+    <use xlink:href="#node" x="580" y="600"/>
+    <use xlink:href="#node" x="680" y="600"/>
+    <!-- Far field held at 0 -->
+    <rect x="780" y="578" width="9" height="44" fill="url(#hatch)" stroke="#8c564b"
+          stroke-width="1.2"/>
+  </g>
+
+  <g id="labels" inkscape:groupmode="layer" inkscape:label="Labels">
+    <g id="node-labels">
+      <text x="230" y="70" text-anchor="middle" fill="#1f77b4">T<tspan baseline-shift="sub" font-size="70%">1</tspan> (pipe 1, down)</text>
+      <text x="530" y="70" text-anchor="middle" fill="#1f77b4">T<tspan baseline-shift="sub" font-size="70%">2</tspan> (pipe 2, up)</text>
+      <text x="390" y="540">T<tspan baseline-shift="sub" font-size="70%">b</tspan> (borehole wall)</text>
+      <text x="800" y="596">T = 0</text>
+      <text x="800" y="614">at r<tspan baseline-shift="sub" font-size="70%">s</tspan></text>
+    </g>
+    <g id="resistor-labels" font-size="14">
+      <text x="244" y="135">R<tspan baseline-shift="sub" font-size="70%">f</tspan></text>
+      <text x="244" y="185">R<tspan baseline-shift="sub" font-size="70%">p</tspan>/2</text>
+      <text x="244" y="265">R<tspan baseline-shift="sub" font-size="70%">p</tspan>/2</text>
+      <text x="244" y="345">R<tspan baseline-shift="sub" font-size="70%">g</tspan>/3</text>
+      <text x="244" y="425">R<tspan baseline-shift="sub" font-size="70%">g</tspan>/3</text>
+      <text x="244" y="505">R<tspan baseline-shift="sub" font-size="70%">g</tspan>/3</text>
+      <text x="516" y="135" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">f</tspan></text>
+      <text x="516" y="185" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">p</tspan>/2</text>
+      <text x="516" y="265" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">p</tspan>/2</text>
+      <text x="516" y="345" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">g</tspan>/3</text>
+      <text x="516" y="425" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">g</tspan>/3</text>
+      <text x="516" y="505" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">g</tspan>/3</text>
+      <text x="280" y="402" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">gg</tspan>/3</text>
+      <text x="380" y="402" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">gg</tspan>/3</text>
+      <text x="480" y="402" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">gg</tspan>/3</text>
+      <text x="430" y="586" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">s</tspan>/4</text>
+      <text x="530" y="586" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">s</tspan>/4</text>
+      <text x="630" y="586" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">s</tspan>/4</text>
+      <text x="730" y="586" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">s</tspan>/4</text>
+    </g>
+    <g id="component-labels">
+      <g fill="none" stroke="#000" stroke-width="1">
+        <path d="M182,158 H176 V302 H182"/>
+        <path d="M182,306 H176 V546 H182"/>
+        <path d="M384,650 V656 H776 V650"/>
+      </g>
+      <text x="165" y="95" text-anchor="end" fill="#1f77b4">fluid</text>
+      <text x="165" y="135" text-anchor="end">film</text>
+      <text x="165" y="151" text-anchor="end" font-size="12" fill="#444">(no capacity)</text>
+      <text x="165" y="226" text-anchor="end">pipe wall</text>
+      <text x="165" y="244" text-anchor="end" font-size="13" fill="#444">n<tspan baseline-shift="sub" font-size="70%">p</tspan> = 2</text>
+      <text x="165" y="422" text-anchor="end">grout</text>
+      <text x="165" y="440" text-anchor="end" font-size="13" fill="#444">n<tspan baseline-shift="sub" font-size="70%">g</tspan> = 3</text>
+      <text x="380" y="448" text-anchor="middle">grout core (n<tspan baseline-shift="sub" font-size="70%">gg</tspan> = 3)</text>
+      <text x="380" y="466" text-anchor="middle" font-size="13" fill="#444">between the first grout nodes, x = 1/n<tspan baseline-shift="sub" font-size="70%">g</tspan></text>
+      <text x="580" y="676" text-anchor="middle" fill="#8c564b">soil: n<tspan baseline-shift="sub" font-size="70%">s</tspan> = 4 log-spaced shells, r<tspan baseline-shift="sub" font-size="70%">b</tspan> to r<tspan baseline-shift="sub" font-size="70%">s</tspan></text>
+    </g>
+    <g id="legend" font-size="13">
+      <use xlink:href="#cap" x="60" y="596"/>
+      <text x="76" y="612">node capacity (half of the</text>
+      <text x="76" y="628">two adjacent shells)</text>
+      <use xlink:href="#res" x="78" y="660"/>
+      <text x="104" y="665">sub-resistance</text>
+    </g>
+  </g>
+</svg>

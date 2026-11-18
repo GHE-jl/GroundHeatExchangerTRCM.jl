@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="870" height="640" viewBox="0 0 870 640"
+     font-family="Helvetica, Arial, sans-serif" font-size="15">
+  <title>Quasi-3D stack of layers of trcm</title>
+  <defs>
+    <path id="res" d="M-18,0 H-12 L-10,-5 L-6,5 L-2,-5 L2,5 L6,-5 L10,5 L12,0 H18"
+          fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+    <path id="cap" d="M0,0 V10 M-9,10 H9 M-9,15 H9 M0,15 V22 M-8,22 H8 M-5,26 H5 M-2,30 H2"
+          fill="none" stroke="#666" stroke-width="1.4"/>
+    <circle id="node" r="4" fill="#000"/>
+    <circle id="fnode" r="5.5" fill="#1f77b4" stroke="#000" stroke-width="1"/>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse"
+             patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#fff"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#8c564b" stroke-width="2"/>
+    </pattern>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5"
+            orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f77b4"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5"
+            orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d62728"/></marker>
+    <marker id="arrK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+    <!-- One layer: T1 at (0,0), T2 at (70,25), cross-section box, Tb, soil chain to rs -->
+    <g id="layer-network">
+      <g fill="none" stroke="#000" stroke-width="1.6">
+        <path d="M0,0 H64 A6,6 0 0 1 76,0 H120"/>
+        <polyline points="70,25 120,25"/>
+        <polyline points="260,13 300,13 332,13"/>
+        <polyline points="368,13 400,13 432,13"/>
+        <polyline points="468,13 500,13 532,13"/>
+        <polyline points="568,13 590,13"/>
+      </g>
+      <rect x="120" y="-22" width="140" height="70" rx="6" fill="#fff" stroke="#555"
+            stroke-width="1.2"/>
+      <text x="190" y="7" text-anchor="middle" font-size="13">pipe, grout and</text>
+      <text x="190" y="24" text-anchor="middle" font-size="13">core chains</text>
+      <use xlink:href="#res" x="350" y="13"/>
+      <use xlink:href="#res" x="450" y="13"/>
+      <use xlink:href="#res" x="550" y="13"/>
+      <use xlink:href="#cap" x="300" y="13"/>
+      <use xlink:href="#cap" x="400" y="13"/>
+      <use xlink:href="#cap" x="500" y="13"/>
+      <use xlink:href="#node" x="300" y="13"/>
+      <use xlink:href="#node" x="400" y="13"/>
+      <use xlink:href="#node" x="500" y="13"/>
+      <rect x="590" y="-9" width="9" height="44" fill="url(#hatch)" stroke="#8c564b"
+            stroke-width="1.2"/>
+      <text x="300" y="0" text-anchor="middle">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+      <text x="608" y="10" font-size="13">T = 0</text>
+      <text x="608" y="27" font-size="13">at r<tspan baseline-shift="sub" font-size="70%">s</tspan></text>
+      <use xlink:href="#fnode" x="0" y="0"/>
+      <use xlink:href="#fnode" x="70" y="25"/>
+    </g>
+  </defs>
+
+  <rect id="background" x="0" y="0" width="870" height="640" fill="#fff"/>
+
+  <g id="regions" inkscape:groupmode="layer" inkscape:label="Regions">
+    <rect x="100" y="105" width="320" height="390" fill="#f2f2f2"/>
+    <rect x="420" y="105" width="320" height="390" fill="#f3e9dc"/>
+    <g stroke="#999" stroke-width="1" stroke-dasharray="5,4">
+      <line x1="20" y1="235" x2="740" y2="235"/>
+      <line x1="20" y1="365" x2="740" y2="365"/>
+    </g>
+    <g stroke="#000" stroke-width="1.2">
+      <line x1="20" y1="105" x2="740" y2="105"/>
+      <line x1="20" y1="495" x2="740" y2="495"/>
+    </g>
+    <text x="430" y="30" text-anchor="middle" font-weight="bold">Quasi-3D stack: n<tspan baseline-shift="sub" font-size="70%">z</tspan> identical layers coupled by the fluid only</text>
+    <text x="736" y="99" text-anchor="end" font-size="13" fill="#444">borehole head, z = 0</text>
+    <text x="736" y="512" text-anchor="end" font-size="13" fill="#444">borehole toe, z = H</text>
+    <text x="260" y="122" text-anchor="middle" font-size="13" fill="#666">borehole</text>
+    <text x="580" y="122" text-anchor="middle" font-size="13" fill="#8c564b">ground</text>
+    <g font-weight="bold" font-size="14">
+      <text x="24" y="175">layer 1</text>
+      <text x="24" y="305">layer 2</text>
+      <text x="24" y="435">layer n<tspan baseline-shift="sub" font-size="70%">z</tspan></text>
+    </g>
+    <!-- Layer thickness -->
+    <line x1="808" y1="237" x2="808" y2="363" stroke="#000" stroke-width="1"
+          marker-start="url(#arrK)" marker-end="url(#arrK)"/>
+    <text x="816" y="296">dz</text>
+    <text x="816" y="314" font-size="12" fill="#444">= H/n<tspan baseline-shift="sub" font-size="70%">z</tspan></text>
+  </g>
+
+  <g id="layers" inkscape:groupmode="layer" inkscape:label="Layers">
+    <use xlink:href="#layer-network" x="140" y="170"/>
+    <use xlink:href="#layer-network" x="140" y="300"/>
+    <use xlink:href="#layer-network" x="140" y="430"/>
+  </g>
+
+  <g id="advection" inkscape:groupmode="layer" inkscape:label="Advection" fill="none"
+     stroke-width="2.2">
+    <!-- Down-going pipe: T1 of layer k-1 feeds T1 of layer k -->
+    <line x1="140" y1="177" x2="140" y2="292" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <line x1="140" y1="307" x2="140" y2="422" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <!-- Up-going pipe: T2 of layer k+1 feeds T2 of layer k -->
+    <line x1="210" y1="448" x2="210" y2="333" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <line x1="210" y1="318" x2="210" y2="203" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <!-- Bottom layer: the up-going pipe is fed by its down-going pair -->
+    <path d="M140,437 C140,488 210,492 210,463" stroke="#1f77b4" marker-end="url(#arrB)"/>
+    <!-- Head: Tout leaves the up-going pipe, Tin = Tout + 1 enters the down-going pipe -->
+    <polyline points="210,188 210,66 189,66" stroke="#1f77b4"/>
+    <polyline points="161,66 140,66 140,162" stroke="#d62728" marker-end="url(#arrR)"/>
+    <rect x="161" y="55" width="28" height="22" rx="3" fill="#fff" stroke="#d62728"
+          stroke-width="1.6"/>
+  </g>
+
+  <g id="labels" inkscape:groupmode="layer" inkscape:label="Labels">
+    <text x="175" y="71" text-anchor="middle" font-size="14" font-weight="bold" fill="#d62728">+1</text>
+    <text x="218" y="62" fill="#1f77b4">T<tspan baseline-shift="sub" font-size="70%">out</tspan></text>
+    <text x="132" y="62" text-anchor="end" fill="#d62728">T<tspan baseline-shift="sub" font-size="70%">in</tspan> = T<tspan baseline-shift="sub" font-size="70%">out</tspan> + 1</text>
+    <g font-size="14" fill="#1f77b4">
+      <text x="132" y="190" text-anchor="end">T<tspan baseline-shift="sub" font-size="70%">1</tspan></text>
+      <text x="132" y="320" text-anchor="end">T<tspan baseline-shift="sub" font-size="70%">1</tspan></text>
+      <text x="132" y="450" text-anchor="end">T<tspan baseline-shift="sub" font-size="70%">1</tspan></text>
+      <text x="219" y="213">T<tspan baseline-shift="sub" font-size="70%">2</tspan></text>
+      <text x="219" y="343">T<tspan baseline-shift="sub" font-size="70%">2</tspan></text>
+      <text x="219" y="473">T<tspan baseline-shift="sub" font-size="70%">2</tspan></text>
+    </g>
+    <text x="110" y="482" text-anchor="end" font-size="12" fill="#1f77b4">U-turn</text>
+  </g>
+
+  <g id="notes" inkscape:groupmode="layer" inkscape:label="Notes" font-size="14">
+    <line x1="30" y1="548" x2="70" y2="548" stroke="#1f77b4" stroke-width="2.2"
+          marker-end="url(#arrB)"/>
+    <text x="80" y="553">first-order upwind advection, V̇<tspan baseline-shift="sub" font-size="70%">c</tspan>·C<tspan baseline-shift="sub" font-size="70%">f</tspan>/dz per channel (energy units)</text>
+    <text x="30" y="582">No vertical conduction in grout and ground: the layers interact only through the fluid.</text>
+    <text x="30" y="608">Response model: T = 0 at t = 0, far field T = 0 at r<tspan baseline-shift="sub" font-size="70%">s</tspan> in every layer, T<tspan baseline-shift="sub" font-size="70%">in</tspan> = T<tspan baseline-shift="sub" font-size="70%">out</tspan> + 1 at the inlet.</text>
+  </g>
+</svg>

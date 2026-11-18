@@ -1,0 +1,15 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+GroundHeatExchanger = "bd8f68b8-2a15-4d14-8bb6-4cefce65f0ac"
+ThermalResistanceCapacitanceModel = "350637da-6de5-484a-83f1-fb8896cd88f0"
+
+[sources]
+GroundHeatExchanger = {path = "../../GroundHeatExchanger.jl"}
+ThermalResistanceCapacitanceModel = {path = ".."}
+
+[compat]
+CairoMakie = "0.15"
+DelimitedFiles = "1"
+GroundHeatExchanger = "2"
+julia = "1.11"

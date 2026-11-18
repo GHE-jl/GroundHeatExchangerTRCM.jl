@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="760" height="450" viewBox="0 0 760 450"
+     font-family="Helvetica, Arial, sans-serif" font-size="15">
+  <title>Single U-tube: cross-section and steady-state Δ-circuit</title>
+  <defs>
+    <!-- Resistor, 36 px long, centered on (0,0), horizontal -->
+    <path id="res" d="M-18,0 H-12 L-10,-5 L-6,5 L-2,-5 L2,5 L6,-5 L10,5 L12,0 H18"
+          fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- Network node -->
+    <circle id="node" r="4" fill="#000"/>
+    <circle id="fnode" r="5" fill="#1f77b4" stroke="#000" stroke-width="1"/>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <rect id="background" x="0" y="0" width="760" height="450" fill="#fff"/>
+
+  <g id="cross-section" inkscape:groupmode="layer" inkscape:label="Cross-section">
+    <text x="180" y="32" text-anchor="middle" font-weight="bold">Cross-section</text>
+    <rect x="30" y="50" width="300" height="300" rx="6" fill="#f3e9dc" stroke="#8c564b"
+          stroke-width="1"/>
+    <text x="42" y="72" fill="#8c564b">ground (k<tspan baseline-shift="sub" font-size="70%">s</tspan>, C<tspan baseline-shift="sub" font-size="70%">s</tspan>)</text>
+    <circle cx="180" cy="200" r="115" fill="#e5e5e5" stroke="#000" stroke-width="2"/>
+    <text x="180" y="122" text-anchor="middle" fill="#444">grout (k<tspan baseline-shift="sub" font-size="70%">g</tspan>, C<tspan baseline-shift="sub" font-size="70%">g</tspan>)</text>
+    <!-- Pipes: wall between ri and ro, fluid inside -->
+    <g id="pipes">
+      <circle cx="125" cy="200" r="23" fill="#cfe3f5" stroke="#555" stroke-width="6"/>
+      <circle cx="235" cy="200" r="23" fill="#cfe3f5" stroke="#555" stroke-width="6"/>
+      <text x="125" y="206" text-anchor="middle" font-weight="bold" fill="#1f77b4">1</text>
+      <text x="235" y="206" text-anchor="middle" font-weight="bold" fill="#1f77b4">2</text>
+      <text x="125" y="248" text-anchor="middle" font-size="13" fill="#1f77b4">down</text>
+      <text x="235" y="248" text-anchor="middle" font-size="13" fill="#1f77b4">up</text>
+    </g>
+    <g id="dimensions" stroke="#000" stroke-width="1">
+      <line x1="125" y1="172" x2="125" y2="142" stroke-dasharray="3,2"/>
+      <line x1="235" y1="172" x2="235" y2="142" stroke-dasharray="3,2"/>
+      <line x1="127" y1="148" x2="233" y2="148" marker-start="url(#arr)" marker-end="url(#arr)"/>
+      <line x1="180" y1="200" x2="180" y2="313" marker-end="url(#arr)"/>
+      <circle cx="180" cy="200" r="2" fill="#000"/>
+    </g>
+    <text x="180" y="143" text-anchor="middle">s</text>
+    <text x="187" y="275">r<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <line x1="261" y1="119" x2="276" y2="104" stroke="#000" stroke-width="1"/>
+    <text x="279" y="102">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    <text x="180" y="374" text-anchor="middle" font-size="13" fill="#444">pipes at ±s/2 from the center; T<tspan baseline-shift="sub" font-size="70%">b</tspan>: borehole wall</text>
+  </g>
+
+  <g id="delta-circuit" inkscape:groupmode="layer" inkscape:label="Delta circuit">
+    <text x="570" y="32" text-anchor="middle" font-weight="bold">Δ-circuit (steady state)</text>
+    <g id="wires" fill="none" stroke="#000" stroke-width="1.6">
+      <line x1="450" y1="120" x2="552" y2="120"/>
+      <line x1="588" y1="120" x2="690" y2="120"/>
+      <line x1="450" y1="120" x2="500.02" y2="195.02"/>
+      <line x1="519.98" y1="224.98" x2="570" y2="300"/>
+      <line x1="690" y1="120" x2="639.98" y2="195.02"/>
+      <line x1="620.02" y1="224.98" x2="570" y2="300"/>
+    </g>
+    <g id="resistors">
+      <use xlink:href="#res" transform="translate(570,120)"/>
+      <use xlink:href="#res" transform="translate(510,210) rotate(56.31)"/>
+      <use xlink:href="#res" transform="translate(630,210) rotate(123.69)"/>
+    </g>
+    <g id="nodes">
+      <use xlink:href="#fnode" x="450" y="120"/>
+      <use xlink:href="#fnode" x="690" y="120"/>
+      <use xlink:href="#node" x="570" y="300"/>
+    </g>
+    <g id="labels">
+      <text x="570" y="104" text-anchor="middle">R<tspan baseline-shift="sub" font-size="70%">12</tspan></text>
+      <text x="494" y="216" text-anchor="end">R<tspan baseline-shift="sub" font-size="70%">1b</tspan></text>
+      <text x="646" y="216">R<tspan baseline-shift="sub" font-size="70%">1b</tspan></text>
+      <text x="440" y="104" text-anchor="end" fill="#1f77b4">T<tspan baseline-shift="sub" font-size="70%">1</tspan></text>
+      <text x="440" y="140" text-anchor="end" font-size="13" fill="#444">fluid 1</text>
+      <text x="700" y="104" fill="#1f77b4">T<tspan baseline-shift="sub" font-size="70%">2</tspan></text>
+      <text x="700" y="140" font-size="13" fill="#444">fluid 2</text>
+      <text x="570" y="326" text-anchor="middle">T<tspan baseline-shift="sub" font-size="70%">b</tspan></text>
+    </g>
+  </g>
+
+  <g id="definitions" inkscape:groupmode="layer" inkscape:label="Definitions">
+    <text x="400" y="366">R<tspan baseline-shift="sub" font-size="70%">1b</tspan> = 2R<tspan baseline-shift="sub" font-size="70%">b</tspan> = R<tspan baseline-shift="sub" font-size="70%">f</tspan> + R<tspan baseline-shift="sub" font-size="70%">p</tspan> + R<tspan baseline-shift="sub" font-size="70%">g</tspan>  (film, pipe, grout)</text>
+    <text x="400" y="392">1/R<tspan baseline-shift="sub" font-size="70%">12</tspan> = 1/R<tspan baseline-shift="sub" font-size="70%">a</tspan> − 1/(4R<tspan baseline-shift="sub" font-size="70%">b</tspan>),  i.e. R<tspan baseline-shift="sub" font-size="70%">a</tspan> = R<tspan baseline-shift="sub" font-size="70%">12</tspan> ∥ 2R<tspan baseline-shift="sub" font-size="70%">1b</tspan></text>
+    <text x="400" y="418" font-size="13" fill="#444">R<tspan baseline-shift="sub" font-size="70%">b</tspan>, R<tspan baseline-shift="sub" font-size="70%">a</tspan>: multipole method (Javed &amp; Spitler, 2017)</text>
+  </g>
+</svg>
